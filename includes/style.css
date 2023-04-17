@@ -306,6 +306,164 @@ margin: 20% 5% 0%;
   top:40px;
   font-size: 25px;
 }
+/* Contact form */
+    #contacts{
+        background-color:#222831; 
+        height:auto;
+        margin-top:0px;
+        position:relative;
+        z-index:0;
+        
+        }
+        .contact {
+        width: 78%;
+        height:auto;
+        display:flex;
+        align-items:center;
+        margin-left:12%;
+        color:white;
+        margin-bottom:0%;
+        position:relative;
+        }
+        
+        .heading h1 {
+            margin-left: 20px;
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .heading h1 span {
+            color: #00ADB5;
+        }
+        
+        .about-desc 
+        {
+          margin-bottom:0px;
+          color:white;
+          font-size:25px;
+          width: 100vh;
+        }
+        form{
+           width:100%;
+           margin-top:10%;
+           display:flex; 
+           
+        }
+        .container {
+          width: 80%;
+          padding: 0 20px;
+          align-items: center; 
+          display:block;
+           margin-top:10%; 
+        }
+        .container .row100 {
+          width: 100%;
+          display: grid; 
+        }
+        .container .row100 .col {
+          position: relative;
+          width: 80%;
+          padding: 0 10px;
+          margin: 30px 50px 10px;
+          transition: 0.5s; 
+        }
+        
+        .container .row100 .inputBox {
+          position: relative;
+          width: 100%;
+          height: 40px;
+          color: #00ADB5;
+        }
+        .container .row100 .inputBox input,
+        .container .row100 .inputBox.textarea textarea {
+          position: absolute;
+          width: 98%;
+          height: 100%;
+          background: transparent;
+          box-shadow: none;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          padding: 0 10px;
+          z-index: 1;
+          color: #393E46;
+        }
+        .container .row100 .inputBox .text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          line-height: 40px;
+          font-size: 18px;
+          padding: 0 10px;
+          display: block;
+          transition: 0.5s;
+          pointer-events: none;
+        }
+        .container .row100 .inputBox input:focus + .text,
+        .container .row100 .inputBox input:valid + .text {
+          top: -35px;
+          left: -10px; 
+        }
+        
+        .container .row100 .inputBox .line {
+          position: absolute;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #00ADB5;
+          transition: 0.5s;
+          border-radius: 2px;
+          pointer-events: none;
+        }
+        
+        .container .row100 .inputBox input:focus ~ .line,
+        .container .row100 .inputBox input:valid ~ .line {
+          height: 100%;
+        }
+        .container .row100 .inputBox.textarea {
+          position: relative;
+          width: 100%;
+          height: 100px;
+          padding: 10px 0; 
+        }
+        .container .row100 .inputBox.textarea textarea {
+          height: 100%;
+          resize: none; 
+        }
+        
+        .container .row100 .inputBox textarea:focus + .text,
+        .container .row100 .inputBox textarea:valid + .text {
+          top: -35px;
+          left: -10px;
+        }
+        
+        .container .row100 .inputBox textarea:focus ~ .line,
+        .container .row100 .inputBox textarea:valid ~ .line {
+          height: 100%;
+        }
+        
+        input[type="submit"] {
+            background-color: #00ADB5;
+            color:#EEEEEE;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            /* margin-right: 20px; */
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: center;
+        }
+        input[type="submit"]:hover{
+            background-color: transparent;
+            border: 2px solid #00ADB5;
+            cursor: pointer;
+        }
+        
 
 /* footer section */
 footer{
